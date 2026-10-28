@@ -1,0 +1,13 @@
+name: DiscordConsole
+version: 1.0.0
+main: dev.discordconsole.DiscordConsole
+api-version: '1.20'
+description: Use your server console from a Discord channel.
+commands:
+  discordconsole:
+    description: Reload the DiscordConsole config
+    usage: /discordconsole reload
+    permission: discordconsole.admin
+permissions:
+  discordconsole.admin:
+    default: op

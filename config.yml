@@ -1,0 +1,24 @@
+# Bot token from https://discord.com/developers/applications
+# IMPORTANT: enable "MESSAGE CONTENT INTENT" on the Bot page.
+token: "PUT_YOUR_BOT_TOKEN_HERE"
+
+# Channel where console output is shown and commands are accepted.
+# (Discord: Settings > Advanced > Developer Mode, then right-click channel > Copy ID)
+channel-id: "000000000000000000"
+
+# Who may run commands. A user is allowed if their ID OR any of their role IDs is listed.
+# If both lists are empty, NOBODY can run commands (safety default).
+allowed-user-ids: []
+allowed-role-ids: []
+
+# Commands that can never be run from Discord (first word, case-insensitive).
+blocked-commands:
+  - "op"
+  - "deop"
+  - "stop"
+
+# Send server console output to the Discord channel.
+relay-console: true
+
+# Seconds between batches of console output sent to Discord.
+flush-interval-seconds: 2
